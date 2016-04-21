@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<navigation-rule>
+		<display-name>login</display-name>
+		<from-view-id>/login.jsp</from-view-id>
+		<navigation-case><from-outcome>SUCCESS</from-outcome>
+			<to-view-id>/PostLogin.jsp</to-view-id>
+		</navigation-case>
+<!-- 		<navigation-case>
+		<from-outcome>FAIL</from-outcome>
+			<to-view-id>/error.jsp</to-view-id>
+		</navigation-case> -->
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Logout</display-name>
+		<from-view-id>/PostLogin.jsp</from-view-id>
+		<navigation-case><from-outcome>LOGOUT</from-outcome>
+			<to-view-id>/logout.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Logout</display-name>
+		<from-view-id>/Reports.jsp</from-view-id>
+		<navigation-case><from-outcome>LOGOUT</from-outcome>
+			<to-view-id>/logout.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Logout</display-name>
+		<from-view-id>/DatabaseAccess.jsp</from-view-id>
+		<navigation-case><from-outcome>LOGOUT</from-outcome>
+			<to-view-id>/logout.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Logout</display-name>
+		<from-view-id>/DataAnalysis.jsp</from-view-id>
+		<navigation-case><from-outcome>LOGOUT</from-outcome>
+			<to-view-id>/logout.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Logout</display-name>
+		<from-view-id>/DatabaseImportExport.jsp</from-view-id>
+		<navigation-case><from-outcome>LOGOUT</from-outcome>
+			<to-view-id>/logout.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>Logout</display-name>
+		<from-view-id>/AccessLog.jsp</from-view-id>
+		<navigation-case><from-outcome>LOGOUT</from-outcome>
+			<to-view-id>/logout.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>
